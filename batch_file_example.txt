@@ -1,0 +1,35 @@
+REM 1. Needs par2j64.exe in path or current dir
+REM 2. Leave only one of method 2 or 3 uncommented
+REM 3. You can put this batch file in your SENDTO directory, and invoke it with mouse right-click
+REM 4. Rename this file .bat before you do
+
+@ECHO OFF
+SETLOCAL
+
+:GetFilePath
+REM check input path
+IF "%~1"=="" GOTO End
+IF NOT EXIST "%~1" GOTO NextFile
+rem IF NOT "%~z1"=="0" GOTO NextFile
+
+SET par_path="par2j64.exe"
+
+REM method 1: using MultiPar GUI, needs input
+REM %par_path% /create %1
+
+REM method 2: To generate PAR2 files for each directory of a set. Highlight a bunch of directories and use SENDTO to PAR each directory
+REM /rr is percent rate, /rd is use power of 2 sizing, /rf is how many files to create
+REM 
+%par_path% c /rr10 /rd2 %1\0.par2 *
+
+
+REM method 3: To generate PAR2 for each file of a set. Highlight a bunch of files and right-click, and select this batch file in the SENDTO menu.
+REM
+REM %par_path% c /rr10 /rd2 %1.par2 %1
+
+:NextFile
+SHIFT
+GOTO GetFilePath
+
+:End
+ENDLOCAL
