@@ -1,8 +1,14 @@
 # multipar_scripts
 
-Use this script with MULTIPAR to generate checksums for files, or for directories, automatically.
+## How to use
 
-REM 1. Needs par2j64.exe in path or current dir
-REM 2. Leave only one of method 1 or 2 or 3 uncommented
-REM 3. You can put this batch file in your SENDTO directory, and invoke it with mouse right-click
-REM 4. Rename this file .bat before you do
+Use this script with MULTIPAR to generate checksums for files, or for directories, automatically.
+1. Needs par2j64.exe in path or current dir
+2. Leave only one of method 1 or 2 or 3 uncommented
+3. You can put this batch file in your SENDTO directory, and invoke it with mouse right-click
+4. Rename this file .bat before you do
+
+
+## Another multipar
+
+https://github.com/TSDARKNESS/Par2MultiChecker
