@@ -7,8 +7,3 @@ Use this script with MULTIPAR to generate checksums for files, or for directorie
 2. Leave only one of method 1 or 2 or 3 uncommented
 3. You can put this batch file in your SENDTO directory, and invoke it with mouse right-click
 4. Rename this file .bat before you do
-
-
-## Another multipar
-
-https://github.com/TSDARKNESS/Par2MultiChecker
