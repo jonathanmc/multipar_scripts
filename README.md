@@ -7,3 +7,5 @@ Use this script with MULTIPAR to generate checksums for files, or for directorie
 2. Leave only one of method 1 or 2 or 3 uncommented
 3. You can put this batch file in your SENDTO directory, and invoke it with mouse right-click
 4. Rename this file .bat before you do
+
+If you make this better, please fork and I'll re-integrate. GPL v3 so free but not for commercial stuff.
